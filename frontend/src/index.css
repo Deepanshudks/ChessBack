@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    margin: 0;
+* {
+  margin: 0;
+}
+
+@keyframes knight-tilt {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.animate-knight-tilt {
+  animation: knight-tilt 1.5s ease-in-out infinite;
 }
